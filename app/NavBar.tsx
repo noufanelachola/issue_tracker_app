@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import {IoIosBug} from "react-icons/io"
 
 const NavBar = () => {
 
@@ -10,7 +11,7 @@ const NavBar = () => {
 
     return (
         <nav className='flex space-x-6 mb-5 px-5 h-14 items-center border-b'>
-            <Link href="/">Image</Link>
+            <Link href="/"><IoIosBug/></Link>
             <ul className='flex space-x-6'>
                 {links.map(link => 
                     <Link 
